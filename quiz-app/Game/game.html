@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./game.css">
+    <title>Quiz App - play</title>
+</head>
+
+<body>
+    <main>
+        <div class="scoreboard">
+            <aside class="left">
+                <p class="question-counter-text"></p>
+                <div class="progress-bar">
+                    <div class="progress-bar-level"></div>
+                </div>
+            </aside>
+            <aside class="right">
+                <p>score</p>
+                <h2 class="score-text">0</h2>
+            </aside>
+        </div>
+        <div class="full">
+            <div class="question">
+                <p>answer this question if you can</p>
+            </div>
+            <div class="answers">
+                <div class="choice">
+                    <p class="num">1</p>
+                    <button class="text" data-number="1">answer 1</button>
+                </div>
+                <div class="choice">
+                    <p class="num">2</p>
+                    <button class="text" data-number="2">answer 2</button>
+                </div>
+                <div class="choice">
+                    <p class="num">3</p>
+                    <button class="text" data-number="3">answer 3</button>
+                </div>
+                <div class="choice">
+                    <p class="num">4</p>
+                    <button class="text" data-number="4">answer 4</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./game.js"></script>
+</body>
+
+</html>

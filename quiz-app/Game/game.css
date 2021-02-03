@@ -1,0 +1,86 @@
+.scoreboard {
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    color: #3379b3;
+    margin: 50px 0;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.scoreboard p {
+    font-size: 1.2rem;
+}
+
+.scoreboard h2 {
+    font-size: 2.1rem;
+    margin: 1rem 0;
+}
+
+.progress-bar {
+    height: 2.1rem;
+    width: 180px;
+    border: 1px solid #3379b3;
+    margin: 1rem 0;
+}
+
+.progress-bar-level {
+    height: 100%;
+    width: 0%;
+    background-color: #3379b3;
+    transition: 0.3s;
+}
+
+.full {
+    width: 500px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.full, .answers {
+    display: flex;
+    flex-direction: column;
+}
+
+.full *, .answers .choice {
+    width: 100%;
+}
+
+.question p {
+    font-size: 20px;
+    padding: 0 0 5px 0;
+}
+
+.choice {
+    cursor: pointer;
+    display: flex;
+    margin: 7px 0;
+}
+
+p {
+    margin: 0;
+}
+
+.num {
+    padding: 15px 20px;
+    background-color: #257e7e9f;
+    width: min-content;
+}
+
+.text {
+    padding: 15px 0 15px 10px;
+    background-color: #6eb6b8b2;
+    transition: 0.3s;
+}
+
+.correct {
+    background-color: #28a745f2;
+}
+
+.incorrect {
+    background-color: #dc3545f2;
+}
+
+button {
+    text-align: left;
+    border: none;
+}

@@ -1,0 +1,30 @@
+div {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+div h1 {
+    font-size: 36px;
+}
+
+div * {
+    width: 100%;
+    text-align: center;
+    color: #1833cc;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+div button {
+    border: 1px solid #1833cc;
+    border-radius: 15px;
+    padding: 12px 0;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+div button:hover {
+    background-color: #4683b4ce;
+}
