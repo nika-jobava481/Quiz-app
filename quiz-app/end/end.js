@@ -27,6 +27,8 @@ saveBtn.addEventListener("click", function (e) {
     highscores.push(score);
 
     highscores.sort((a, b) => +b.Score - (+a.Score));
+    
+    highscores.splice(5);
 
     localStorage["highscores"] = JSON.stringify(highscores);
     window.location.assign("../index.html");
