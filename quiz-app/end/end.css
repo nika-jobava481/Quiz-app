@@ -9,10 +9,15 @@ h1 {
     margin: 10px 0;
 }
 
+div {
+    width: 90%;
+    max-width: 300px;
+}
+
 form {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 100%;
 }
 
 a {
