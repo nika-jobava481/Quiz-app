@@ -1,10 +1,12 @@
 section {
-    width: 500px;
+    width: 85%;
+    max-width: 500px;
 }
 
 h1 {
     text-align: center;
-    font-size: 40px;
+    width: 100%;
+    font-size: 1.8em;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     color: #3379b3;
@@ -35,7 +37,7 @@ button:hover {
 ul {
     list-style: none;
     padding: 0;
-    margin: 10px 0;
+    margin: 10px auto;
 }
 
 ul {
