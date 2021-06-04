@@ -1,11 +1,13 @@
 .scoreboard {
-    width: 500px;
+    width: 90%;
+    max-width: 500px;
     display: flex;
     justify-content: space-around;
     color: #3379b3;
     margin: 50px 0;
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .scoreboard p {
@@ -19,7 +21,8 @@
 
 .progress-bar {
     height: 2.1rem;
-    width: 180px;
+    width: 90vh;
+    max-width: 180px;
     border: 1px solid #3379b3;
     margin: 1rem 0;
 }
@@ -32,7 +35,8 @@
 }
 
 .full {
-    width: 500px;
+    width: 90%;
+    max-width: 500px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -83,4 +87,10 @@ p {
 button {
     text-align: left;
     border: none;
+}
+
+@media screen and (max-width: 254px) {
+    .scoreboard {
+        margin: 10px 0;
+    }
 }
