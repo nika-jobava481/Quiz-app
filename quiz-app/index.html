@@ -16,7 +16,36 @@
             <a href="./Game/game.html"><button>Play</button></a>
             <a href="./highscores/highscores.html"><button>Highscores</button></a>
         </div>
+
+
+        <div id="weather" class="weather-box">
+            Loading weather...
+        </div>
     </main>
+
+    <script>
+        // Fetch weather data for Tbilisi, Georgia
+        const lat = 41.7151;
+        const lon = 44.8271;
+        const apiKey = '7b01e3d9e50848201ed8699fedb81c9b';
+        const weatherDiv = document.getElementById('weather');
+
+        const weatherApiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+
+        fetch(weatherApiUrl)
+            .then(response => response.json())
+            .then(data => {
+                const temp = data.main.temp;
+                const description = data.weather[0].description;
+                weatherDiv.innerHTML = `
+                    <div class="temp">${temp}°C</div>
+                    <div class="desc">${description}</div>
+                `;
+            })
+            .catch(error => {
+                weatherDiv.innerHTML = 'Error fetching weather data';
+            });
+    </script>
 </body>
 
 </html>
